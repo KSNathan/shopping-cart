@@ -1,0 +1,51 @@
+
+  <div id="register" class="modal fade" role="dialog" ng-controller="reg_val_ctrl">
+             
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>Register</h3>
+                  </div>
+                  <div class="modal-body" >
+                    <form name="form_register" role="form" ng-submit="submitForm(form_register.$valid)" >
+                      <div class="form-group">
+                        <label for="fname">First Name:</label>
+                          <input type="text" class="form-control" name="fname" id="fname" ng-model="fname" ng-maxlength="10" required />
+                          <span style="display:none;">Required!</span>
+                          <div role="alert">
+                            <span class="error" ng-show="form_register.fname.$error.required && !form_register.fname.$pristine" class="red">Required!</span>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="lname">Last Name:</label>
+                          <input type="text" class="form-control" name="lname" id="lname" ng-model="lname" required>
+                          <div role="alert">
+                             <span class="error" ng-show="form_register.lname.$error.required && !form_register.lname.$pristine" class="red">Required!</span>
+                          </div>
+                      </div>
+                      <div class="form-group">                         
+                          <label for="email">Email address:</label>
+                          <input type="email" class="form-control" name="email" id="email" ng-model="email">
+                          <p ng-show="form_register.email.$invalid" class="help-block" class="red">Email is not valid.</p>
+                          <span class="error" ng-show="form_register.email.$error.required && form_register.email.$touched" class="red">Required!</span>
+                        </div>
+                        <div class="form-group">                         
+                          <label for="mobile">Mobile:</label>
+                          <input type="number" class="form-control" name="mobile" id="mobile" ng-model="mobile" min="0" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="11">
+                        </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" name="pwd" id="pwd" ng-model="pwd" ng-minlength="6">
+                        <p ng-show="form_register.pwd.$error.minlength" class="help-block" class="red" >Password is too short.</p> 
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd_reenter">Re-enter Password:</label>
+                        <input type="password" class="form-control" name="pwd_reenter" ng-model="pwd_reenter" id="pwd_reenter" ng-blur="confirmPassword()"/>
+                        <p id="msg_reenter" ng-show="!isPswdMtch && !form_register.pwd_reenter.$pristine" >Re-entered password is not same as above password.</p> 
+                      </div>
+                      <button type="submit" class="btn btn-success" ng-disabled="form_register.$invalid" ng-click="register();">Register</button>
+                    </form>
+                  </div>        
+                </div>
+              </div>
+            </div><!-- End of Registration page-->

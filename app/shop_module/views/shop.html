@@ -1,0 +1,25 @@
+<section class="shop-container" ng-controller="shopCtrl">
+
+ <div class="product-container" ng-repeat="p in products |priceFilter:p | nameFilter:p">
+
+   <div class="product-image" ng-style="{'background-image':'url(' + p.picture + ')'}">
+   </div>
+
+   <div class="product-name">
+     <span>{{p.name}}</span>
+   </div>
+
+    <div class="product-price">
+     <span>&#8377;{{p.price}}</span>
+   </div>
+
+   <div class="add-to-cart">
+   <button ng-click="addToCart();">Add To Cart</button>
+   </div>
+
+
+
+ </div>
+
+
+</section>

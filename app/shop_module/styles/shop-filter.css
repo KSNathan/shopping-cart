@@ -1,0 +1,52 @@
+
+section.shop-filter {
+  margin: 0 100px;
+  width: calc(50% - 200px);
+  
+}
+
+section.shop-filter > p {
+
+color: #e74c3c;
+font-weight: bold;
+font-size: 2em;
+}
+
+
+section.shop-filter > input{
+
+color: #e74c3c;
+font-weight: bold;
+font-size: 1.5em;
+position: absolute;
+top:130px;
+right: 10px;
+
+}
+
+
+.slider-control {
+  height: 1em;
+  padding-top: .5em;
+}
+
+.slider {
+  height: 2px;
+  border: 1px solid black;
+}
+
+.slider-handle {
+  height: 1em;
+  width: 1em;
+  border: 1px solid black;
+  border-radius: 2px;
+  background: #fff;
+  cursor: pointer;  
+}
+.slider-handle:hover {
+border: none;
+}
+.slider-handle:focus{
+  outline: none;
+  border: none;
+}

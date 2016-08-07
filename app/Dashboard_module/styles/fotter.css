@@ -1,0 +1,79 @@
+.fotter-section > .fotter {
+
+    height: 300px;
+    width: 100%;
+    background: #303132;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.fotter-section > .fotter > div {
+
+    width: 400px;
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+.fotter-section > .fotter > div > p {
+
+font-size: 1em;
+color: #fff;
+letter-spacing: 2px;
+
+}
+
+.fotter-section > .fotter > div > div.social-icons {
+
+    
+}
+
+.fotter-section > .fotter > div > div.social-icons >i {
+
+    color: #fff;
+    margin: 30px;
+}
+
+.fotter-section > .fotter > div > form {
+
+margin-top: 30px;
+}
+
+.fotter-section > .fotter > div > form > input[type="text"] {
+    background: #535151;
+    border: 2px solid #535151;
+    height: 35px;
+    width:  300px;
+
+}
+
+.fotter-section > .fotter > div > form > input[type="submit"] {
+    margin-top: 10px;
+    background: #D3D3D3;
+    text-align: center;
+    border: 2px solid #535151;
+    height: 35px;
+    width:  300px;
+
+}
+
+
+.fotter-section > .fotter > div > div.assistance-info {
+
+margin-top:30px;
+}
+
+.fotter-section > .fotter > div > div.assistance-info >p{
+    font: normal normal normal 13px/1.4em raleway,sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.fotter-section > .fotter > div > p.copywrite{
+    flex:3 ;
+    height: 50px;
+    color: red;
+}

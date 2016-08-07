@@ -1,0 +1,107 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.main-header {
+
+background: #535151;
+  height: 80px;
+  position: relative;  
+  
+}
+
+.main-header > .container {
+
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  right: 0px;
+
+}
+
+.main-header > .container > span.logo {
+
+ color: #fff;
+ font-size: 30px;
+
+ letter-spacing: 4px;
+ display: block;
+
+}
+
+.main-header > .container > ul  {
+  
+    list-style: none; 
+  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+
+
+.main-header > .container > ul >li {
+
+  
+    display: inline-block;
+    margin:20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.main-header > .container > ul >li > a {
+
+  
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.main-header > .container > ul >li > a > span {
+cursor: pointer;
+
+}
+
+
+.main-header > .container > ul >li > a:hover {
+
+  
+    color: #7f8c8d;
+
+
+}
+
+.main-header > .container > ul >li > a > i {
+
+ color: #e74c3c;
+ position: relative;
+ 
+
+}
+
+.main-header > .container > ul >li > a > i:hover {
+
+ color: #7f8c8d;
+
+ 
+
+}
+.main-header > .container > ul >li > a > i > span {
+ 
+ position: absolute;
+ color: #fff;
+ font-size: 15px;
+ left: 50%;
+ top:8px;
+ transform: translateX(-50%);
+ font-weight: bold;
+
+
+}

@@ -1,0 +1,355 @@
+.login-wrapper {
+  margin:0;	
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; 
+
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  
+  width: 100vw;
+ 
+ 
+  height: 100vh;
+  min-height: 364px; 
+  padding: 20px;
+  background: #bdc3c7;
+  box-sizing: border-box;
+  
+}
+
+
+.login-wrapper .login {
+  
+ 
+  padding: 10px 20px 20px 20px;
+  width: 90%;
+  height: 50%;
+  min-height: 350px;
+  max-width: 320px;
+  background: #ffffff;
+  position: relative;
+  padding-bottom: 80px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+   border-radius: 14PX;
+
+}
+
+.login-wrapper .login .title {
+  color: #36B6DD;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0 30px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.login-wrapper .login  .invalid-login{
+  background: #C43830;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 5px 10px;
+  margin-top: -20px;
+  border-radius: 3px;
+}
+
+.login-wrapper .login  .invalid-login > span.badge{
+
+background: #fff;
+}
+
+.login-wrapper .login  .invalid-login > span > i {
+
+  color:#C43830;
+}
+
+
+.login-wrapper .login input {
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  -webkit-transition:border-width 0.2s ease;
+  transition: border-width 0.2s ease;
+  border-radius: 10px;
+  color: #ccc;
+  
+}
+
+.login-wrapper .login input + i.fa {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
+  margin-top: -47px; 
+  opacity: 0;
+  left: 0;
+  -webkit-transition:all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  
+}
+
+.login-wrapper .login input:focus {
+  outline: none;
+  color: #444;
+  border-color: #2196F3;
+  border-left-width: 35px;
+}
+
+.login-wrapper .login input:focus + i.fa {
+  opacity: 1;
+  left: 30px;
+  -webkit-transition:all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.login-wrapper .login a {
+  font-size: 1em;
+  color: #6EBAF7;
+  text-decoration: none;
+}
+.login-wrapper .login a:hover {
+	color: #4aa3df;
+}
+
+.login-wrapper .login button {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  background: #2196F3;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 60px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+
+  -webkit-transition:all 0.1s ease-out;
+
+  transition: all 0.1s ease-out;
+ 
+}
+
+
+.login-wrapper .login button[disabled="disabled"] {
+
+	
+	cursor: not-allowed !important;
+}
+
+
+
+
+.login-wrapper .login button:hover {
+	background: #4aa3df;
+	-webkit-transition:all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+
+}
+
+.login-wrapper .login .fa-circle-o-notch {
+	position: absolute;
+	left: 50%;
+	top:0;
+	margin-left: -25px;
+    color: #fff;
+	opacity: 0;
+
+}
+
+.login-wrapper .login > span  {
+
+ display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-wrapper .login-authenticating {
+  
+  border-radius: 2px 2px 5px 5px;
+  padding: 10px 20px 20px 20px;
+  width: 90%;
+  
+  max-width: 320px;
+  background:  #2196F3;
+  position: relative;
+  padding-bottom: 80px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition:all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+
+}
+
+.login-wrapper .login-authenticating .title {
+  color: #36B6DD;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0 30px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  opacity: 0;
+
+}
+
+.login-wrapper .login-authenticating input {
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  -webkit-transition:border-width 0.2s ease;
+  transition: border-width 0.2s ease;
+  border-radius: 2px;
+  color: #ccc;
+  opacity: 0;
+  cursor: context-menu;
+  
+}
+
+.login-wrapper .login-authenticating input + i.fa {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
+  margin-top: -47px; 
+  opacity: 0;
+  left: 0;
+  -webkit-transition:all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  opacity: 0;
+  
+}
+
+.login-wrapper .login-authenticating input:focus {
+  outline: none;
+  color: #444;
+  border-color: #2196F3;
+  border-left-width: 35px;
+  opacity: 0;
+}
+
+.login-wrapper .login-authenticating input:focus + i.fa {
+  opacity: 1;
+  left: 30px;
+  -webkit-transition:all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  opacity: 0;
+}
+
+.login-wrapper .login-authenticating a {
+  font-size: 1em;
+  color: #6EBAF7;
+  text-decoration: none;
+  display:none;
+}
+
+
+.login-wrapper .login-authenticating button {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  background: #2196F3;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 60px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 2px 2px;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+  -webkit-transition:all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  border-bottom-width: 7px;
+  opacity: 0;
+  display: none;
+}
+
+
+
+.login-wrapper .login-authenticating  .fa-circle-o-notch{
+
+	color:#fff;
+	position: absolute;
+	left: 50%;
+	top:30%;
+	margin-left: -25px;
+	-webkit-transition:all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	opacity: 1;
+
+}
+
+.login-wrapper .login-authenticating > span  {
+ color: #fff;
+ position: absolute;
+ left: 50%;
+
+ top:45%;
+ font-size:1.2em;
+ font-style: italic;
+ margin-left: -53px;
+ display: block;
+
+}
+
+
+
+.has-error{
+	outline:1px solid red;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+.login-wrapper { 
+ padding: 2px;
+}
+
+
+}  
+

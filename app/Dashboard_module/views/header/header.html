@@ -1,0 +1,60 @@
+<header class="main-header"  ng-controller = "DashboardHeaderCtrl">
+   
+
+<div class="container">
+
+  <span class="logo">PRETTY GAL </span>
+
+  <ul>
+
+   <li><a href="#/dashboard">Home</a></li>
+   <li><a href="#/shop">Shop</a></li>
+   <li><a href="#">Customer Care</a></li>
+   <li ng-show="showLogin"><a  data-toggle="modal" data-target="#register" ><span class="glyphicon glyphicon-user"></span>Register</a></li>
+   <li ng-show="showLogin"><a  data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+   <li><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"><span >{{noOfItems}}</span></i></a></li>
+   <li ng-show="!showLogin"><span>Hello Cool</li>
+
+  </ul>
+ 
+
+</div>
+
+
+
+
+
+
+</header>
+
+
+
+
+     <!-- include registration content here -->
+
+<ng-include src="'Login_module/views/Register.html'"></ng-include>
+
+
+
+
+
+
+     <!-- include main content here -->
+
+<ng-include src="'Login_module/views/login.html'"></ng-include>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside ng-controller="DashboardLeftMenuCtrl"  ng-class="{'main-sidebar' : showSideBar && !hideSideBar , 'main_sidebar_tab' : !showSideBar &&  !hideSideBar,'main-sidebar-hide' : hideSideBar} " >
+    
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section   ng-class="{'sidebar' : showSideBar && !hideSideBar , 'sidebar_tab' : !showSideBar && !hideSideBar , 'sidebar-hide' : hideSideBar} " >
+    
+      <!-- Sidebar user panel -->
+      <div  ng-class="{'user-panel' : showSideBar && !hideSideBar , 'user-panel_tab' : !showSideBar && !hideSideBar , 'user-panel-hide' : hideSideBar} ">
+ 
+         <div class="pull-left image" >
+          <img src="Dashboard_module/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+
+        <div class="pull-left info">
+          <p>chandan coolz</p>
+          <a ><i class="fa fa-circle"></i> Online</a>
+        </div>
+     
+     </div><!-- end of user panel -->
+
+
+          <!-- sidebar menu -->
+      <ul  ng-class="{'sidebar-menu' : showSideBar , 'sidebar-menu_tab' : !showSideBar} "  >
+       <li class="header">GENERAL</li>
+       <li>
+          <a href=""  ng-mouseover="show_tab_dashboard_slide_heading = true" ng-mouseleave="show_tab_dashboard_slide_heading = false">
+            <i class="fa fa-home fa-lg"  ></i> <span ng-class="{'show_heading' : show_tab_dashboard_slide_heading , 'hide_heading' : !show_tab_dashboard_slide_heading } ">Dashboard</span>
+            
+          </a>
+       </li><!--end of dashboard -->
+
+      
+
+
+
+
+
+
+
+
+
+       <li  ng-class="{'active' : menusKey[s.menu] , 'treeview' : !menusKey[s.menu]  } "  ng-repeat="s in sideMenu" >
+
+
+          <a href=""  ng-mouseover="tab_heading_mouseOver(s.menu);" ng-mouseleave="tab_heading_mouseLeft(s.menu);">
+            <i class="fa {{s.icon}} fg-lg"></i>
+            <span  ng-class="{'show_heading' : sideMenuHeadingKey['show_tab_'+s.menu+'_slide_heading'] , 'hide_heading' : !sideMenuHeadingKey['show_tab_'+s.menu+'_slide_heading'] } " >{{s.menu}}</span>
+            <i class="fa fa-chevron-left pull-right" ng-click = "menusKey[s.menu] = !menusKey[s.menu]" ng-show="s.submenu.length >0"></i>
+          </a>
+          
+         
+         
+       <ul  class="treeview-menu" ng-show="showSideBar || (!showSideBar && sideMenuHeadingKey['show_tab_'+s.menu+'_slide_heading']) " 
+
+        ng-mouseover = "showFirstlevelSubMenu()"  ng-mouseleave="hideFirstlevelSubMenu(s.menu)">
+           <li ng-repeat="s1 in s.submenu" ><a href=""  ><i class="fa fa-circle-o"></i>{{s1}}</a></li>
+          
+         </ul> <!-- treeview mwnu -->
+
+
+
+
+
+      </li>  <!-- end of angularjS -->
+
+    
+
+
+      
+      </ul><!-- end of sidebar menu -->
+
+
+   </section>
+  </aside><!-- end of left side menu>

@@ -1,0 +1,255 @@
+.main-content {
+    position: relative;
+}
+
+.main-content > .content-background {
+
+/*background: url("../images/wallpaper1.jpg") no-repeat;*/
+background-size: cover;
+
+position: relative;
+height: calc(100vh - 80px);
+
+transition: background 1s ease;
+}
+
+.main-content > .content-logo {
+
+height: 100px;
+width: 300px;
+background: url("../images/logo.png") no-repeat;
+background-size: contain;
+
+position: absolute;
+top:10px;
+left: 50%;
+transform: translateX(-60%);
+}
+
+.main-content > .content2 {
+height: 600px;
+width: 100%;
+background: url("../images/girl.png") no-repeat;
+background-attachment: fixed;
+background-size: cover;
+position: relative;
+
+
+}
+
+.main-content > .content2 > .message{
+
+
+background: #E4DFD6;
+border-radius: 1px;
+background-position: center;
+padding: 40px;
+position: absolute;
+background: rgba(232,226,217,0.7);
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+text-align: center;
+}    
+
+
+.main-content > .content2 > .message > p {
+
+      letter-spacing: 0.02em;
+      font-size: 3em;
+     font-family: Arial, Helvetica, sans-serif;  
+     
+}
+.main-content > .content2 > .message > button{
+
+ background-color: #303132;
+ padding: 5px;
+ font-size: 1em;
+ font-weight: bold;
+ color: #fff;
+ border: 2px solid #303132;
+ margin:5px;
+ 
+
+}
+
+.main-content > .content2 > .message > button:hover{
+background: #fff;
+color: #303132;
+border: none;
+
+}
+
+.main-content > .content3 {
+height: 600px;
+width: 100%;
+background: #fff;
+padding: 50px;
+
+
+}
+
+
+.main-content > .content3 > p.heading {
+
+
+color: #303132;
+font-size: 2em;
+font-weight: bold;
+letter-spacing: 4px;
+text-align: center;
+position: relative;
+  font-family: "Times New Roman", Times, serif;
+ }   
+
+.main-content > .content3 > p.heading:after {
+ width: 100px;
+ height: 2px;
+ background: #303132;
+ content: "";
+ position: absolute;
+ top:50px;
+ left:50%;
+ transform: translateX(-50%);
+
+ 
+}
+
+
+.main-content > .content3 > p.sub-heading {
+
+    margin-top: 40px;
+    font-family: raleway, sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: 5.69999980926514px;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.main-content > .content3 > section{
+    height: 400px;
+    width: 100%;
+    position: relative;
+   
+    padding: 50px;
+}
+.main-content > .content3 > section > .product-section {
+    display: flex;
+    justify-content: center;
+    
+}
+.main-content > .content3 > section > .product-section > .product{
+
+ margin: 10px;
+ height: 300px;
+ width: 300px;
+
+ background-attachment: cover;
+
+ display: inline-block;
+position: relative;
+text-align: center;
+
+
+}
+
+.main-content > .content3 > section > .product-section > .product > a{
+
+display: inline-block;
+position: absolute;
+bottom: 0px;
+left: 0;
+background: #303132;
+width: 100%;
+height:40px;
+padding: auto 0;
+vertical-align: middle;
+text-decoration: none;
+font-size: 16px;
+color: #fff;
+padding: 9px;
+
+}
+
+.main-content > .fotter {
+
+    height: 300px;
+    width: 100%;
+    background: #303132;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.main-content > .fotter > div {
+
+    width: 400px;
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+.main-content > .fotter > div > p {
+
+font-size: 1em;
+color: #fff;
+letter-spacing: 2px;
+
+}
+
+.main-content > .fotter > div > div.social-icons {
+
+    
+}
+
+.main-content > .fotter > div > div.social-icons >i {
+
+    color: #fff;
+    margin: 30px;
+}
+
+.main-content > .fotter > div > form {
+
+margin-top: 30px;
+}
+
+.main-content > .fotter > div > form > input[type="text"] {
+    background: #535151;
+    border: 2px solid #535151;
+    height: 35px;
+    width:  300px;
+
+}
+
+.main-content > .fotter > div > form > input[type="submit"] {
+    margin-top: 10px;
+    background: #D3D3D3;
+    text-align: center;
+    border: 2px solid #535151;
+    height: 35px;
+    width:  300px;
+
+}
+
+
+.main-content > .fotter > div > div.assistance-info {
+
+margin-top:30px;
+}
+
+.main-content > .fotter > div > div.assistance-info >p{
+    font: normal normal normal 13px/1.4em raleway,sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.main-content > .fotter > div > p.copywrite{
+    flex:3 ;
+    height: 50px;
+    color: red;
+}
